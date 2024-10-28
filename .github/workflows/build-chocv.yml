@@ -1,0 +1,17 @@
+name: 'Build ChocV'
+on:
+  push:
+    branches:
+      - 'personal-settings'
+  workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["chocv"]'
+      nav: '["vi"]'
+      custom_config: '["#define MIRYOKU_TAP_GAMING\n#define MIRYOKU_EXTRA_CANARY"]'
+      branches: '["jaromeyer/zmk/insecure"]'
+      
