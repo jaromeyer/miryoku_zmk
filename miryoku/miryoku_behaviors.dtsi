@@ -7,14 +7,14 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
     u_emt: u_emt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      flavor = "balanced";
       hold-while-undecided;
       bindings = <&kp>, <&kp>;
     };
@@ -22,7 +22,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      flavor = "balanced";
       bindings = <&mo>, <&kp>;
     };
   };
